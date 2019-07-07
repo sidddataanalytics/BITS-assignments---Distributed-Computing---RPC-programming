@@ -1,0 +1,14 @@
+Steps for executing the FACTORIAL Program:
+1)	Create a New Folder “factorial”
+2)	Open terminal and set the path to the folder “factorial”
+3)	Execute the command in terminal: rpcgen -C factorial.x
+4)	The above command will create the following files:
+a) factorial.h	b) factorial_clnt.c	c) factorial_svc.c	d) factorial_xdr.c  
+5)	Create Client and Server Files factorial_client.c, factorial_server.c and the copy these files into “factorial” folder.
+6)	In the terminal, Execute the following commands:
+a)	gcc -lnsl -o client factorial_client.c factorial_clnt.c factorial_xdr.c
+b)	gcc -lrpcsvc -lnsl -o server factorial_server.c factorial_svc.c factorial_xdr.c
+7)	Type ./server in terminal
+8)	Open a New Terminal and set the path to the folder “factorial”
+9)	Type ./client localhost <no>  (Here {no: 1,2,3,4,5,6……} is the input no. to factorial program
+10)	The RESULT will be displayed in Client Machine.
