@@ -1,0 +1,18 @@
+struct factorial_in
+	{
+	long int arg1;
+	};
+
+struct factorial_out
+	{
+	long int resl;
+	};
+
+program FACTORIAL_PROG
+	{
+    		version FACTORIAL_VERS
+		{
+    		factorial_out FACTORIALPROC(factorial_in) = 1;	
+		}=1;
+	}=0x13451112;
+
